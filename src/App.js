@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import NasaGrid from "./NasaGrid";
 
 function App() {
   return (
