@@ -19,9 +19,10 @@ export default function NasaGrid() {
             });
     }, []);
 
+    
     return (
         <div className="container">
-            <NasaCard 
+            <NasaCard
             key={data.index}
             title={data.title}
             img={data.hdurl}
