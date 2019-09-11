@@ -3,7 +3,7 @@ import NasaCard from "./NasaCard";
 import axios from "axios";
 
 export default function NasaGrid() {
-    const [grid, setGrid] = useState([]);
+    const [data, setGrid] = useState([]);
 
 
     useEffect(() => {
@@ -20,6 +20,14 @@ export default function NasaGrid() {
     }, []);
 
     return (
-   
-
+        <div className="container">
+            <NasaCard 
+            key={data.index}
+            title={data.title}
+            img={data.hdurl}
+            copyright={data.copyright}
+            date={data.date}
+            description={data.explanation}/> 
+        </div>
+    )
 }
