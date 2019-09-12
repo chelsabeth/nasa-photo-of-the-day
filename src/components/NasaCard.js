@@ -13,7 +13,7 @@ import {
 const NasaCard = props => {
     return (
       <Col xs="6" sm="4" key={props.key}>
-        <Card>
+        <Card outline color="danger">
           <CardImg top width="100%" src={props.img} alt="Image of Space" />
           <CardBody>
             <CardTitle>{props.title}</CardTitle>
