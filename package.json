@@ -11,6 +11,7 @@
     "react-scripts": "3.0.1",
     "react-transition-group": "^4.3.0",
     "reactstrap": "^8.0.1",
+    "styled-components": "^4.3.2",
     "yarn": "^1.17.3"
   },
   "scripts": {
