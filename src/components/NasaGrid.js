@@ -7,8 +7,10 @@ import styled from "styled-components";
 export const BlueButton = styled.button`
     width: 250px;
     height: 100px;
+    font-size: 25px;
     background: darkblue;
     color: red;
+    margin-left: 500px;
 `;
 
 export default function NasaGrid() {
@@ -17,7 +19,7 @@ export default function NasaGrid() {
 
     useEffect(() => {
         axios 
-            .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
+            .get(`https://api.nasa.gov/planetary/apod?api_key=fuq0ZlfvxAlFwRD3BQAs9KcODHjpWV4KKV0BJMj7`)
             .then(response => {
                 const grid = response.data;
                 console.log(grid);
@@ -40,7 +42,7 @@ export default function NasaGrid() {
             copyright={data.copyright}
             date={data.date}
             description={data.explanation}/> 
-            <BlueButton>Welcome Space Explorer!</BlueButton>
+            <BlueButton>Welcome Space Explorer! 🚀</BlueButton>
             </Row>
         </Container>
     );
