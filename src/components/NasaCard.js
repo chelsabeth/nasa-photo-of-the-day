@@ -16,7 +16,7 @@ const NasaCard = props => {
         <Card outline color="danger">
           <CardImg top width="100%" src={props.img} alt="The Iris Nebula" />
           <CardBody>
-            <CardTitle>{props.title}</CardTitle>
+            <CardTitle tag="h3">{props.title}</CardTitle>
             <CardText>Description: {props.description}</CardText>
             <CardText>Photographer: {props.copyright}</CardText>
             <CardText>
