@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import NasaCard from "./NasaCard";
 import axios from "axios";
 import { Container, Row } from "reactstrap";
+import styled from "styled-components";
+
+export const BlueButton = styled.button`
+    width: 250px;
+    height: 100px;
+    background: darkblue;
+    color: red;
+`;
 
 export default function NasaGrid() {
     const [data, setGrid] = useState([]);
@@ -21,6 +29,7 @@ export default function NasaGrid() {
     }, []);
 
     
+
     return (
         <Container>
             <Row>
@@ -31,6 +40,7 @@ export default function NasaGrid() {
             copyright={data.copyright}
             date={data.date}
             description={data.explanation}/> 
+            <BlueButton>Welcome Space Explorer!</BlueButton>
             </Row>
         </Container>
     );
